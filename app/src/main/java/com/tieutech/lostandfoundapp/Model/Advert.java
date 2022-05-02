@@ -2,7 +2,10 @@ package com.tieutech.lostandfoundapp.Model;
 
 import java.util.Date;
 
+//ABOUT: Class that defines each Advert object
 public class Advert {
+
+    //Variables
     String isItemFound;
     String name;
     String phone;
@@ -10,6 +13,7 @@ public class Advert {
     String date;
     String location;
 
+    //Constructor
     public Advert(String isItemFound, String name, String phone, String description, String date, String location) {
         this.isItemFound = isItemFound;
         this.name = name;
@@ -19,11 +23,7 @@ public class Advert {
         this.location = location;
     }
 
-    public Advert(String isItemFound, String description) {
-        this.isItemFound = isItemFound;
-        this.description = description;
-    }
-
+    //Getters
     public String isItemFound() { return isItemFound; }
     public String getName() { return name; }
     public String getPhone() { return phone; }
@@ -31,6 +31,7 @@ public class Advert {
     public String getDate() { return date; }
     public String getLocation() { return location; }
 
+    //Setters
     public void setItemFound(String itemFound) { isItemFound = itemFound; }
     public void setName(String name) { this.name = name; }
     public void setPhone(String phone) { this.phone = phone; }
